@@ -62,7 +62,7 @@
     HMPBViewController *pbViewController = [HMPBViewController new];
     pbViewController.imageViewClass = HMPBImageView.class;
     pbViewController.pb_dataSource = self;
-    pbViewController.pb_delegate = self;
+//    pbViewController.pb_delegate = self;
     pbViewController.pb_startPage = sender.tag;
 //    pbViewController.exit = ^(PBViewController *sender) {
 //        [sender.navigationController popViewControllerAnimated:YES];
@@ -132,14 +132,5 @@
     return nil;
 }
 
-#pragma mark - PBViewControllerDelegate
-
-- (void)viewController:(HMPBViewController *)viewController didSingleTapedPageAtIndex:(NSInteger)index presentedImage:(UIImage *)presentedImage {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)viewController:(HMPBViewController *)viewController didLongPressedPageAtIndex:(NSInteger)index presentedImage:(UIImage *)presentedImage {
-    NSLog(@"didLongPressedPageAtIndex: %@", @(index));
-}
 
 @end

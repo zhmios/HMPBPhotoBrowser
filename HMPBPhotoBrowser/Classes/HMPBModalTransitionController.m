@@ -91,6 +91,7 @@
                             to:(UIView *)toView
                     completion:(void (^)(BOOL flag))completion {
     [container addSubview:fromView];
+    
     if (self.willDismiss) {
         self.willDismiss(fromView, toView);
     }
