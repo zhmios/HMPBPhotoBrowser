@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HMPBPhotoBrowser'
-  s.version          = '0.1.0'
+  s.version          = '0.1.5'
   s.summary          = '图片浏览器，是对PBPhotoBrowser的微调'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   图片浏览器，根据特定场景对PBPhotoBrowser进行微调
-
+                       DESC
   s.homepage         = 'https://github.com/zhmios/HMPBPhotoBrowser'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
