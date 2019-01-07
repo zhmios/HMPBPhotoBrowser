@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "HMPBImageScrollView+internal.h"
+#import "HMPBImageScrollView.h"
+#import "HMPBImageScrollViewController.h"
+#import "HMPBModalTransitionController.h"
+#import "HMPBViewController.h"
+#import "UIView+HMPBSnapshot.h"
 
 FOUNDATION_EXPORT double HMPBPhotoBrowserVersionNumber;
 FOUNDATION_EXPORT const unsigned char HMPBPhotoBrowserVersionString[];

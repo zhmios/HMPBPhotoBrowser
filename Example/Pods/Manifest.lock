@@ -4,15 +4,20 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HMPBPhotoBrowser (0.1.0)
+  - HMPBPhotoBrowser (0.1.5)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
   - HMPBPhotoBrowser (from `../`)
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
+    - SDWebImage
 
 EXTERNAL SOURCES:
   HMPBPhotoBrowser:
@@ -20,8 +25,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HMPBPhotoBrowser: 5e3bf7dc56697c262a561b346ec94188d1a82614
+  HMPBPhotoBrowser: e27b16be15d96e0cd24742d33d2e23f334f93aed
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
-PODFILE CHECKSUM: 5929b22da3af311912121bc1b592a661c373b18b
+PODFILE CHECKSUM: bf868f5586c5df88a8d756ce6a4f01c17fdcf914
 
 COCOAPODS: 1.5.3

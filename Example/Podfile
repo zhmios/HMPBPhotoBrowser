@@ -4,7 +4,7 @@ platform :ios, '8.0'
 
 target 'HMPBPhotoBrowser_Example' do
   pod 'HMPBPhotoBrowser', :path => '../'
-
+  pod 'SDWebImage'
   target 'HMPBPhotoBrowser_Tests' do
     inherit! :search_paths
 
