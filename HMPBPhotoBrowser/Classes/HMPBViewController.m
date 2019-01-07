@@ -125,8 +125,7 @@ static const NSUInteger reusable_page_count = 3;
     [super viewDidAppear:animated];
     for (UIView *view in self.view.subviews) {
         if ([view isKindOfClass:[UIScrollView class]]) {
-            ((UIScrollView *)view).delegate = self;
-            UIScrollView *scrollView = view;
+            UIScrollView *scrollView = (UIScrollView *)view;
             scrollView.bounces = NO;
             
             break;
