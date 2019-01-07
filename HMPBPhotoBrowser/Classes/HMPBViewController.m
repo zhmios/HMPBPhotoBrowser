@@ -98,7 +98,7 @@ static const NSUInteger reusable_page_count = 3;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+ 
     // Set numberOfPages
     [self _setNumberOfPages];
     // Set visible view controllers
@@ -118,6 +118,21 @@ static const NSUInteger reusable_page_count = 3;
     self.delegate = self;
     
     [self _setupTransitioningController];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    for (UIView *view in self.view.subviews) {
+        if ([view isKindOfClass:[UIScrollView class]]) {
+            ((UIScrollView *)view).delegate = self;
+            UIScrollView *scrollView = view;
+            scrollView.bounces = NO;
+            
+            break;
+        }
+    }
+    
 }
 
 - (void)viewWillLayoutSubviews {

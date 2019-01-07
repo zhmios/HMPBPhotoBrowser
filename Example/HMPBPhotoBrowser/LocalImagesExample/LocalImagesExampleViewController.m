@@ -26,7 +26,7 @@
     self.navigationController.navigationBarHidden = YES;
     
     self.imageViews = [@[] mutableCopy];
-    for (NSInteger index = 0; index < self.frames.count; ++index) {
+    for (NSInteger index = 0; index < 1; ++index) {
         UIView *imageView = [UIView new];
         imageView.clipsToBounds = YES;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -101,7 +101,8 @@
 #pragma mark - PBViewControllerDataSource
 
 - (NSInteger)numberOfPagesInViewController:(HMPBViewController *)viewController {
-    return self.frames.count;
+
+    return 1;
 }
 
 - (UIImage *)viewController:(HMPBViewController *)viewController imageForPageAtIndex:(NSInteger)index {
