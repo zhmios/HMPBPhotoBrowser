@@ -1,0 +1,6 @@
+framework module Pods_HMPBPhotoBrowser_Tests {
+  umbrella header "Pods-HMPBPhotoBrowser_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

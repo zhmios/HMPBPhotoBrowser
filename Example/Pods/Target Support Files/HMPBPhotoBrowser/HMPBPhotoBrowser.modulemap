@@ -1,0 +1,6 @@
+framework module HMPBPhotoBrowser {
+  umbrella header "HMPBPhotoBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

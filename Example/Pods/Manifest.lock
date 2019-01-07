@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HMPBPhotoBrowser (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HMPBPhotoBrowser (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  HMPBPhotoBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HMPBPhotoBrowser: 5e3bf7dc56697c262a561b346ec94188d1a82614
+
+PODFILE CHECKSUM: 5929b22da3af311912121bc1b592a661c373b18b
+
+COCOAPODS: 1.5.3
