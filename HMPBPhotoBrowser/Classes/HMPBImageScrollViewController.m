@@ -107,7 +107,7 @@
         self.imageView.image = self.fetchImageHandler();
     } else if (self.configureImageViewWithDownloadProgressHandler) {
         __weak typeof(self) weak_self = self;
-        self.configureImageViewWithDownloadProgressHandler(self.imageView, ^(NSInteger receivedSize, NSInteger expectedSize) {
+        self.configureImageViewWithDownloadProgressHandler(self.imageView, ^(NSInteger receivedSize, NSInteger expectedSize,NSURL * _Nullable targetURL) {
             __strong typeof(weak_self) strong_self = weak_self;
             if (strong_self.dismissing || !strong_self.view.window) {
                 strong_self.progressLayer.hidden = YES;

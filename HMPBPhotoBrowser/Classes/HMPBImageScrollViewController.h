@@ -27,7 +27,7 @@
 #import <UIKit/UIKit.h>
 
 @class HMPBImageScrollView;
-typedef void(^PBImageDownloadProgressHandler)(NSInteger receivedSize, NSInteger expectedSize);
+typedef void(^PBImageDownloadProgressHandler)(NSInteger receivedSize, NSInteger expectedSize,NSURL * _Nullable targetURL);
 
 @interface HMPBImageScrollViewController : UIViewController
 
