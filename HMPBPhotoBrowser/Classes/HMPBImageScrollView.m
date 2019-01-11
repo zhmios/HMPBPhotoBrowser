@@ -187,13 +187,9 @@
 }
 
 - (void)_updateFrame {
-    CGFloat height = 64;
-    if (iPhoneX) {
-        height = 88;
-    }
-    CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    self.frame = CGRectMake(0, height, screenSize.width, screenSize.height - height);
-    
+   
+       self.frame = [UIScreen mainScreen].bounds;
+
     __kindof UIImage *image = self.imageView.image;
     if (!image) {
         return;

@@ -42,25 +42,11 @@
     PBLog(@"%s", __FUNCTION__);
 }
 
-- (CGFloat)navHeight{
-    
-    if (iPhoneX) {
-        return 88;
-    }else{
-        return 64;
-    }
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.imageScrollView];
-    CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    UIView *navView = [[UIView alloc] init];
-    navView.frame = CGRectMake(0, 0, screenSize.width, self.navHeight);
-    navView.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:navView];
-    self.imageScrollView.frame = CGRectMake(0, self.navHeight, screenSize.width, screenSize.height - self.navHeight);
+    self.imageScrollView.frame = self.view.bounds;
     
     [self.view.layer addSublayer:self.progressLayer];
 }
@@ -133,6 +119,7 @@
     if (!_imageScrollView) {
         _imageScrollView = [HMPBImageScrollView new];
         _imageScrollView.imageViewClass = self.imageViewClass;
+        
     }
     return _imageScrollView;
 }
