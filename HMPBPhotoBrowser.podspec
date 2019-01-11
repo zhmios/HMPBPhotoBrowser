@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HMPBPhotoBrowser'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = '图片浏览器，是对PBPhotoBrowser的微调'
 
 # This description is used to generate tags and improve search results.
